@@ -1,0 +1,7 @@
+<%= form_tag("/lab10_m/output", :method => "get",  :class => 'text') do %>
+    <%= label_tag("Введите n:") %>
+    <%= text_field_tag(:n) %> <br/>
+    <br/>
+    <%= submit_tag"Результат в XML", :name => 'to_xml' %>
+    <%= submit_tag"Результат в HTML", :name => 'to_html' %>
+<% end %>
